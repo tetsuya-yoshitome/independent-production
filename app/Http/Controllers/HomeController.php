@@ -35,7 +35,7 @@ class HomeController extends Controller
         $date = new Carbon($user->pre_login_date);
         $date2 = new Carbon($user->login_date);
 
-        if(!(isset($date) ) && !(isset($date2) )){
+        if($user->pre_login_date==null){
             $unit = "初めてのログインです";
         } else{
             $date3 = $date->subSeconds()->diffForHumans($date2);
