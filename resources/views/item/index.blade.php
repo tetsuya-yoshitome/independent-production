@@ -25,7 +25,6 @@
                         <thead>
                             <tr>
                                 <th></th>
-                                <th>ID</th>
                                 <th>名前</th>
                                 <th>種別</th>
                                 <th>価格</th>
@@ -37,7 +36,6 @@
                             @foreach ($items as $item)
                                 <tr>
                                     <td width=10%><a href="{{route('edit',['item_e'=>$item->id])}}" class="btn btn-default">商品編集</a></td>
-                                    <td>{{ $item->id }}</td>
                                     <td>{{ $item->name }}</td>
                                     <td>{{ $item->type }}</td>
                                     <td>{{ $item->price }}</td>
