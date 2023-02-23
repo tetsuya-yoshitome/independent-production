@@ -24,7 +24,6 @@
         @foreach($results as $result)
             <tr>
                 <td>{{$result->sell}}</td>
-                <td>{{$result->id}}</td>
                 <td>{{$result->name}}</td>
                 <td>{{$result->type}}</td>
                 <td>{{$result->price}}</td>
