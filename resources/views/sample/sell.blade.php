@@ -14,8 +14,7 @@
 <h3>@foreach($results as $result)
     @endforeach{{$result->sell}}に売れたのは<?php echo "" . count($results) . "件" ?><br></h3>
     <table border="2">
-        <tr><th>売れた日</th>
-            <th>ID</th>
+        <tr><th>販売日</th>
             <th>名前</th>
             <th>種別</th>
             <th>価格</th>
