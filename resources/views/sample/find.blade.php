@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-<h1>商品検索結果</h1>
+<h1>商品検索</h1>
 キーワード検索
 <form action="/sample" method="post">
     @csrf 
