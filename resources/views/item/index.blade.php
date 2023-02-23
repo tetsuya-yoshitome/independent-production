@@ -30,7 +30,7 @@
                                 <th>種別</th>
                                 <th>価格</th>
                                 <th>詳細</th>
-                                <th>購入日</th>
+                                <th>販売日</th>
                             </tr>
                         </thead>
                         <tbody>
