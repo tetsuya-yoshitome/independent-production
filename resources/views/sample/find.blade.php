@@ -29,7 +29,7 @@
         <tr><th>名前</th><th>種別</th><th>販売日</th><th>価格</th><th width=50%>詳細</th></tr>
         @foreach($items as $item)
             <tr>
-                <td><td>{{$item->name}}</td><td>{{$item->type}}</td><td><a href="{{route('sell', ['sell_day'=>$item->sell])}}">{{$item->sell}}</td><td>{{$item->price}}</td><td>{{$item->detail}}</td>
+                <td>{{$item->name}}</td><td>{{$item->type}}</td><td><a href="{{route('sell', ['sell_day'=>$item->sell])}}">{{$item->sell}}</td><td>{{$item->price}}</td><td>{{$item->detail}}</td>
             </tr>
         @endforeach
     </table> 
