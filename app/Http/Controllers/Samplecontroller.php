@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Item;
 use public\js\sample;
 
-class samplecontroller extends Controller
+class SampleController extends Controller
 {
     public function find(Request $request)
     {
