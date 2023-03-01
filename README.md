@@ -1,35 +1,38 @@
-## 商品管理システム
+# データベースで商品管理①
 
-### 環境構築手順
+## 概要
+このシステムでは、販売した商品の管理ができます。
+商品の新規登録、編集、削除ができます。
+また登録した商品の検索も可能です。
+検索結果画面から同日に売れた商品一覧を、売上件数と売上合計とともに表示させることもできます。
 
-* Gitクローン
-* .env.example をコピーして .env を作成
-* MySQLかPostgreSQLのデータベース作成（名前：item_management）  
-  ローカルでMAMPを使用しているのであれば、MySQL推奨
-* .env にデータベース接続情報追加
-```
-例）
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=item_management
-DB_USERNAME=root
-DB_PASSWORD=root
-```
-* APP_KEY生成
-```
-$ php artisan key:generate
-```
-* Composerインストール
-```
-$ composer install
-```
-* フロント環境構築
-```
-$ npm install
-$ npm run dev
-```
-* マイグレーション
-```
-$ php artisan migrate
-```
+## 主な機能
+- ログイン・ログアウト機能
+
+- 商品一覧画面
+
+- 商品新規登録、編集、削除
+
+- 商品販売管理機能
+
+- 商品検索機能
+
+- 同日販売一覧画面
+
+## 開発環境
+
+PHP 8.1.6
+MySQL 15.1
+Laravel 8.83.3
+
+## 設計書
+[設計書ぺージへ] 
+https://drive.google.com/drive/u/1/folders/1xro9cFHiKSY6xVETcvAJ9_1nioz5gtCP
+
+## システム閲覧
+[アプリケーションページへ]
+https://ancient-coast-63854.herokuapp.com/login
+
+### テストアカウント情報
+メールアドレス：taro@test.jp
+パスワード：test1234
